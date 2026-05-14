@@ -1,6 +1,6 @@
+import { ArrowUpRight } from "lucide-react";
 import { HugeiconsIcon } from "@hugeicons/react";
 import {
-    ArrowUpRight02Icon,
     DatabaseIcon,
     Globe02Icon,
     PaintBrush01Icon,
@@ -87,8 +87,7 @@ const Services = () => {
                                         strokeWidth={1.5}
                                         className="text-(--primary-dark)"
                                     />
-                                    <HugeiconsIcon
-                                        icon={ArrowUpRight02Icon}
+                                    <ArrowUpRight
                                         size={20}
                                         strokeWidth={1.5}
                                     />
