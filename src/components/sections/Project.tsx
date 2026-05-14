@@ -24,7 +24,7 @@ const Projects = () => {
                         </div>
                     </div>
 
-                    <div className="grid gap-5 xl:grid-cols-3">
+                    <div className="grid gap-5 lg:grid-cols-2">
                         {featuredWorks.map((project) => (
                             <ProjectCard key={project.id} project={project} />
                         ))}
