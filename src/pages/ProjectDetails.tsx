@@ -1,0 +1,110 @@
+import { ArrowLeft, ArrowUpRight } from "lucide-react";
+import { Link, useParams } from "react-router-dom";
+import { pageLayout } from "@/constants/layout";
+import works from "@/data/data";
+
+const ProjectDetails = () => {
+    const { id } = useParams();
+    const project = works.find((item) => item.id === id);
+
+    if (!project) {
+        return (
+            <section className="min-h-screen bg-(--surface) px-5 py-32 text-(--text-primary) md:px-8">
+                <div className={`${pageLayout.inner} ${pageLayout.columns}`}>
+                    <div className={pageLayout.content}>
+                        <p className="text-sm uppercase tracking-[0.28em] text-(--primary)">
+                            Project not found
+                        </p>
+                        <h1 className="mt-4 text-5xl font-semibold">This project does not exist.</h1>
+                        <Link
+                            to="/#projects"
+                            className="mt-8 inline-flex items-center gap-2 bg-(--primary) px-6 py-4 text-sm font-semibold uppercase tracking-[0.16em] text-(--text-dark)"
+                        >
+                            <ArrowLeft size={18} />
+                            Back to projects
+                        </Link>
+                    </div>
+                </div>
+            </section>
+        );
+    }
+
+    return (
+        <section className="min-h-screen bg-(--surface) px-5 py-32 text-(--text-primary) md:px-8">
+            <div className={`${pageLayout.inner} ${pageLayout.columns}`}>
+                <article className={`${pageLayout.content}`}>
+                    <Link
+                        to="/#projects"
+                        className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.16em] text-(--primary)"
+                    >
+                        <ArrowLeft size={18} />
+                        Back to projects
+                    </Link>
+
+                    <div className="mt-10 flex flex-wrap gap-2">
+                        <span className="border border-(--border) px-3 py-1 text-xs uppercase tracking-[0.18em] text-(--primary)">
+                            {project.label}
+                        </span>
+                        <span className="border border-(--border) px-3 py-1 text-xs uppercase tracking-[0.18em] text-(--text-secondary)">
+                            {project.dateBuilt}
+                        </span>
+                    </div>
+
+                    <h1 className="mt-6 text-5xl font-semibold leading-tight sm:text-7xl">
+                        {project.title}
+                    </h1>
+                    <p className="mt-6 max-w-3xl text-xl leading-9 text-(--text-secondary)">
+                        {project.description}
+                    </p>
+
+                    <div className="mt-12 overflow-hidden border border-(--border) bg-(--surface-secondary)">
+                        <img
+                            src={project.image}
+                            alt={project.title}
+                            className="aspect-[16/9] w-full object-cover"
+                        />
+                    </div>
+
+                    <div className="mt-12 grid gap-8 md:grid-cols-[1fr_0.75fr]">
+                        <div>
+                            <p className="text-sm uppercase tracking-[0.28em] text-(--primary)">
+                                How I made it
+                            </p>
+                            <p className="mt-4 text-lg leading-8 text-(--text-secondary)">
+                                {project.howIMadeIt}
+                            </p>
+                        </div>
+
+                        <div className="border border-(--border) p-6">
+                            <p className="text-sm uppercase tracking-[0.28em] text-(--primary)">
+                                Stack
+                            </p>
+                            <div className="mt-5 flex flex-wrap gap-2">
+                                {project.techs.map((tech) => (
+                                    <span
+                                        key={tech}
+                                        className="border border-(--border) px-3 py-2 text-sm text-(--text-secondary)"
+                                    >
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
+
+                            <a
+                                href={project.link}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="mt-8 inline-flex items-center gap-2 bg-(--primary) px-6 py-4 text-sm font-semibold uppercase tracking-[0.16em] text-(--text-dark) transition hover:bg-(--primary-light)"
+                            >
+                                Visit project
+                                <ArrowUpRight size={18} />
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    );
+};
+
+export default ProjectDetails;
