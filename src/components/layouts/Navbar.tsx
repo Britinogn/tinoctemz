@@ -10,7 +10,7 @@ import {
     UserIcon,
     Briefcase01Icon,
 } from "@hugeicons/core-free-icons";
-import resume from "@/assets/resume.pdf";
+// import resume from "@/assets/resume.pdf";
 
 const Nav = () => {
     const navLinks = [
@@ -38,11 +38,13 @@ const Nav = () => {
             name: "GitHub",
             icon: GithubIcon,
             href: "https://github.com/britinogn",
+            target: "_blank",
         },
         {
             name: "Resume",
             icon: File01Icon,
-            href: resume,
+            href: "https://docs.google.com/document/d/1XZ9PsuHmWX43OVrSa7AWxyQzjIdDSwSj/edit?usp=sharing&ouid=112842809708175941652&rtpof=true&sd=true",
+            target: "_blank",
         },
     ];
 
@@ -53,11 +55,13 @@ const Nav = () => {
             transition={{ duration: 0.4 }}
             className="fixed left-1/2 top-10 z-50 w-[calc(100%-2rem)] max-w-xl -translate-x-1/2"
         >
-            <div className="flex items-center justify-between gap-2 rounded-tl-2xl rounded-br-2xl  border border-(--border) bg-(--white-surface)/30 px-4 py-3 shadow-[0_20px_70px_rgba(0,0,0,0.18)] backdrop-blur-md">
+            <div className="flex items-center justify-between gap-2 rounded-tl-2xl rounded-br-2xl  border border-(--border) bg-(--white-surface)/60 px-4 py-3 shadow-[0_20px_70px_rgba(0,0,0,0.18)] backdrop-blur-md">
                 {navLinks.map((item, index) => (
                     <motion.a
                         key={index}
                         href={item.href}
+                        target={item.target}
+                        rel="noopener noreferrer"
                         whileHover={{ scale: 1.12 }}
                         whileTap={{ scale: 0.95 }}
                         title={item.name}

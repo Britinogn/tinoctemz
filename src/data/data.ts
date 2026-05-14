@@ -30,12 +30,12 @@ const works = [
         image: bizkeeper,
         title: "BizKeeper",
         description: "BizKeeper is a modern business management platform built to help business owners manage purchases, inventory records, analytics, and operational workflows through a centralized digital system.",
-        techs: ["MongoDB", "TypeScript", "Vue" ,"Express.js" ,"Pinia"],
+        techs: ["Nuxt", "Go", "SupaBase" ,"Postgres" ,"Pinia"],
         link: "https://bizkeeper.pxxl.click/",
         label: "Business Platform",
-        github: "",
+        github: "https://github.com/Britinogn/bizkeeper-client",
         howIMadeIt: "Developed a business management platform focused on purchase tracking, operational organization, and analytics driven workflows. Built reusable dashboard components, structured data management systems, and responsive interfaces to support scalable business operations efficiently.",
-        dateBuilt: "2025",
+        dateBuilt: "2026",
     },
 
     {
@@ -44,13 +44,13 @@ const works = [
         title: "Bookify",
         description:
             "Bookify is a modern booking and reservation platform designed to streamline appointment scheduling and service management with a clean and user friendly experience.",
-        techs: ["MongoDB", "TypeScript", "Vue", "Express.js", "Pinia"],
+        techs: ["Nuxt", "Go", "Sqlite3", "Pinia"],
         link: "https://bookifyapp.vercel.app/",
         label: "Full Stack",
-        github: "",
+        github: "https://github.com/Britinogn/bookifyApp",
         howIMadeIt:
             "Built a responsive booking platform with modern frontend architecture and dynamic scheduling workflows. Implemented reusable UI components, state management, and scalable backend integrations to handle reservations and user interactions efficiently.",
-        dateBuilt: "2025",
+        dateBuilt: "2026",
     },
     {
         id: "courviaship",
@@ -64,7 +64,7 @@ const works = [
         github: "",
         howIMadeIt:
             "Developed a logistics management platform focused on shipment workflows and tracking experiences. Structured the application with reusable frontend components, centralized state management, and scalable backend architecture for handling delivery operations.",
-        dateBuilt: "2025",
+        dateBuilt: "2026",
     },
     {
         id: "movizio",
@@ -72,10 +72,10 @@ const works = [
         title: "Movizio",
         description:
             "Movizio is a movie discovery platform that allows users to explore trending films, search movie collections, and access detailed entertainment information through an engaging interface.",
-        techs: ["MongoDB", "TypeScript", "Vue", "Express.js", "Pinia"],
+        techs: ["MongoDB", "Vue", "TMDB"],
         link: "https://movizio.vercel.app/",
         label: "Frontend",
-        github: "",
+        github: "https://github.com/Britinogn/movizio-",
         howIMadeIt:
             "Built an interactive movie discovery experience with dynamic content rendering and responsive layouts. Integrated movie data handling, search functionality, and optimized UI interactions to create a smooth browsing experience.",
         dateBuilt: "2025",
@@ -86,10 +86,10 @@ const works = [
         title: "House of Peishy",
         description:
             "House of Peishy is a modern fashion and lifestyle brand platform showcasing curated products, elegant visuals, and a premium shopping inspired experience.",
-        techs: ["MongoDB", "TypeScript", "Vue", "Express.js", "Pinia"],
+        techs: ["MongoDB", "Tailwind", "Vue", "Express.js", "JavaScript"],
         link: "https://houseofpeishy.vercel.app/",
-        label: "Frontend",
-        github: "",
+        label: "Fullstack",
+        github: "https://github.com/Britinogn/-houseOfpeishy",
         howIMadeIt:
             "Designed and developed a visually rich brand experience focused on elegant layouts, responsive design, and premium UI presentation. Structured reusable sections and smooth interactions to strengthen the overall user experience.",
         dateBuilt: "2025",
@@ -114,10 +114,10 @@ const works = [
         title: "TechPulse",
         description:
             "TechPulse is a modern technology blog platform focused on delivering curated articles, industry insights, and engaging reading experiences for tech enthusiasts.",
-        techs: ["MongoDB", "TypeScript", "Vue", "Express.js", "Pinia"],
+        techs: ["Vue", "MongoDB", "Javascript", "Express.js", ],
         link: "https://techpulseapp.vercel.app/",
-        label: "Frontend",
-        github: "",
+        label: "Fullstack",
+        github: "https://github.com/Britinogn/Blog-App-FullStack-ClientSide",
         howIMadeIt:
             "Developed a content focused platform with responsive article layouts, structured content presentation, and reusable UI patterns. Focused on readability, navigation flow, and modern frontend performance optimizations.",
         dateBuilt: "2025",
@@ -128,10 +128,10 @@ const works = [
         title: "Lernstasy",
         description:
             "Lernstasy is an online learning platform built to provide accessible educational experiences through interactive course presentation and modern learning interfaces.",
-        techs: ["MongoDB", "TypeScript", "Vue", "Express.js", "Pinia"],
+        techs: ["MongoDB", "Javascript", "Vue", "Express.js", "Cloudinary"],
         link: "https://lernstasy.vercel.app/",
         label: "EdTech",
-        github: "",
+        github: "https://github.com/Britinogn/lern_stasy_server",
         howIMadeIt:
             "Built an educational platform with structured course layouts, reusable learning components, and responsive user experiences. Focused on clean navigation systems, scalable UI architecture, and engaging educational workflows.",
         dateBuilt: "2025",
@@ -142,13 +142,13 @@ const works = [
         title: "Rella Luxury",
         description:
             "Rella Luxury is a premium luxury car rental platform designed to showcase high end vehicles, streamline reservations, and deliver a refined digital booking experience.",
-        techs: ["MongoDB", "TypeScript", "Vue", "Express.js", "Pinia"],
-        link: "https://rella-luxury.vercel.app/",
+        techs: ["MongoDB", "TypeScript", "Nuxt", "Express.js", "Pinia"],
+        link: "https://www.rellaluxury-fleet.com/",
         label: "Full Stack",
         github: "",
         howIMadeIt:
             "Developed a premium vehicle rental platform with responsive layouts, booking workflows, and scalable frontend architecture. Implemented reusable UI systems, modern animations, and structured application flows to enhance the luxury user experience.",
-        dateBuilt: "2025",
+        dateBuilt: "2026",
     },
 ];
 

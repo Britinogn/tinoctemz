@@ -10,7 +10,7 @@ import {
   ShadcnSquareIcon,
   TailwindcssFreeIcons,
 } from "@hugeicons/core-free-icons";
-import resume from "@/assets/resume.pdf";
+// import resume from "@/assets/resume.pdf";
 import { pageLayout } from "@/constants/layout";
 
 function Hero() {
@@ -75,12 +75,12 @@ function Hero() {
           transition={{ duration: 0.55 }}
           className={`${pageLayout.content} text-center`}
         >
-          <div className="mb-8 inline-flex max-w-full items-center gap-3 border border-(--border) bg-(--surface-secondary) px-4 py-2 text-xs uppercase tracking-[0.2em] text-(--text-secondary) sm:tracking-[0.28em]">
+          {/* <div className="mb-8 inline-flex max-w-full items-center gap-3 border border-(--border) bg-(--surface-secondary) px-4 py-2 text-xs uppercase tracking-[0.2em] text-(--text-secondary) sm:tracking-[0.28em]">
             <span className="h-2  w-2 shrink-0 bg-(--primary)" />
             Fullstack website developer
-          </div>
+          </div> */}
 
-          <h1 className="mx-auto max-w-3xl text-5xl font-semibold leading-[0.95] tracking-normal text-(--text-primary) sm:text-7xl lg:text-[7.5rem]">
+          <h1 className="mx-auto max-w-3xl text-5xl font-semibold leading-[0.95]  tracking-normal text-(--text-primary) sm:text-7xl lg:text-[7.5rem]">
             I am Bright Onwuemeri
           </h1>
 
@@ -98,7 +98,9 @@ function Hero() {
               <Send size={18} />
             </a>
             <a
-              href={resume}
+              href="https://docs.google.com/document/d/1XZ9PsuHmWX43OVrSa7AWxyQzjIdDSwSj/edit?usp=sharing&ouid=112842809708175941652&rtpof=true&sd=true"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 border border-(--border) px-6 py-4 text-sm font-semibold uppercase tracking-[0.16em] text-(--text-primary) transition hover:border-(--primary) hover:text-(--primary)"
             >
               Resume
