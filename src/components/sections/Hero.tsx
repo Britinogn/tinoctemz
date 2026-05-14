@@ -62,7 +62,7 @@ function Hero() {
   return (
     <header
       id="home"
-      className="relative overflow-hidden bg-(--surface) text-(--text-primary)"
+      className="relative overflow-hidden bg-(--surface) text-(--text-primary) top-15 "
     >
       <div
         className={`${pageLayout.inner} ${pageLayout.columns} min-h-screen items-center px-5 pb-16 pt-28 md:px-8 md:pb-20`}
@@ -76,7 +76,7 @@ function Hero() {
           className={`${pageLayout.content} text-center`}
         >
           <div className="mb-8 inline-flex max-w-full items-center gap-3 border border-(--border) bg-(--surface-secondary) px-4 py-2 text-xs uppercase tracking-[0.2em] text-(--text-secondary) sm:tracking-[0.28em]">
-            <span className="h-2 w-2 shrink-0 bg-(--primary)" />
+            <span className="h-2  w-2 shrink-0 bg-(--primary)" />
             Fullstack website developer
           </div>
 
