@@ -3,7 +3,7 @@ import { pageLayout } from "@/constants/layout";
 import works from "@/data/data";
 
 const Projects = () => {
-    const featuredWorks = works.slice(0, 6);
+    const featuredWorks = works.slice(0, 50);
 
     return (
         <section id="projects" className="bg-(--surface) px-5 py-24 text-(--text-primary) md:px-8">
@@ -24,7 +24,7 @@ const Projects = () => {
                         </div>
                     </div>
 
-                    <div className="grid gap-5 md:grid-cols-2">
+                    <div className="grid gap-5 xl:grid-cols-3">
                         {featuredWorks.map((project) => (
                             <ProjectCard key={project.id} project={project} />
                         ))}

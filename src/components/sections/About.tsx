@@ -1,5 +1,5 @@
 import { ArrowUpRight, Code2 } from "lucide-react";
-import heroImage from "@/assets/images/ctemz.jpg";
+import heroImage from "@/assets/images/portrait.jpg";
 import { pageLayout } from "@/constants/layout";
 
 const About = () => {
@@ -8,17 +8,19 @@ const About = () => {
     return (
         <section id="about" className="bg-(--white-surface) px-5 py-24 text-(--text-dark) md:px-8">
             <div className={`${pageLayout.inner} ${pageLayout.columns}`}>
+                {/* <span className={pageLayout.verticalLine} /> */}
+
                 <div className={`${pageLayout.content}`}>
                     <p className="mb-10 text-sm uppercase tracking-[0.28em] text-(--primary-dark)">
                         About
                     </p>
 
-                    <div className="grid gap-14 md:grid-cols-[0.9fr_1.1fr] md:items-center">
+                    <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr] ">
                         <div className="order-2 md:order-1">
-                            <div className="relative mx-auto max-w-[440px] pb-14 pl-12 sm:pl-16">
-                                <div className="absolute bottom-0 left-0 top-16 w-[calc(100%-3rem)] border-b-[16px] border-l-[16px] border-(--primary)" />
-                                <div className="absolute left-0 top-16 h-[16px] w-14 bg-(--primary)" />
-                                <div className="absolute bottom-0 right-0 h-16 w-[16px] bg-(--primary)" />
+                            <div className="relative mx-auto max-w-110 pb-14 pl-12 sm:pl-16">
+                                <div className="absolute bottom-0 left-0 top-16 w-[calc(100%-3rem)] border-b-16 border-l-16 border-(--primary)" />
+                                <div className="absolute left-0 top-16 h-4 w-14 bg-(--primary)" />
+                                <div className="absolute bottom-0 right-0 h-16 w-4 bg-(--primary)" />
                                 <div className="absolute bottom-10 left-10 h-[70%] w-[calc(100%-2.5rem)] bg-(--white-secondary)" />
                                 <img
                                     src={heroImage}

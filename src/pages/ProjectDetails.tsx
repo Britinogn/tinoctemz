@@ -1,4 +1,6 @@
-import { ArrowLeft, ArrowUpRight } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { GithubIcon, LinkSquare02Icon } from "@hugeicons/core-free-icons";
 import { Link, useParams } from "react-router-dom";
 import { pageLayout } from "@/constants/layout";
 import works from "@/data/data";
@@ -90,15 +92,26 @@ const ProjectDetails = () => {
                                 ))}
                             </div>
 
-                            <a
-                                href={project.link}
-                                target="_blank"
-                                rel="noreferrer"
-                                className="mt-8 inline-flex items-center gap-2 bg-(--primary) px-6 py-4 text-sm font-semibold uppercase tracking-[0.16em] text-(--text-dark) transition hover:bg-(--primary-light)"
-                            >
-                                Visit project
-                                <ArrowUpRight size={18} />
-                            </a>
+                            <div className="mt-8 grid gap-3">
+                                <a
+                                    href={project.github || "https://github.com/britinogn"}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="inline-flex items-center justify-center gap-2 border border-(--border) px-6 py-4 text-sm font-semibold uppercase tracking-[0.16em] text-(--text-primary) transition hover:border-(--primary) hover:text-(--primary)"
+                                >
+                                    <HugeiconsIcon icon={GithubIcon} size={18} strokeWidth={1.5} />
+                                    GitHub
+                                </a>
+                                <a
+                                    href={project.link}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="inline-flex items-center justify-center gap-2 bg-(--primary) px-6 py-4 text-sm font-semibold uppercase tracking-[0.16em] text-(--text-dark) transition hover:bg-(--primary-light)"
+                                >
+                                    <HugeiconsIcon icon={LinkSquare02Icon} size={18} strokeWidth={1.5} />
+                                    Live URL
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </article>

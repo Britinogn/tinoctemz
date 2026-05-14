@@ -66,7 +66,9 @@ function Hero() {
     >
       <div
         className={`${pageLayout.inner} ${pageLayout.columns} min-h-screen items-center px-5 pb-16 pt-28 md:px-8 md:pb-20`}
-      >
+      >     
+      {/* <span className={pageLayout.verticalLine} /> */}
+
         <motion.div
           initial={{ opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}
@@ -134,7 +136,7 @@ function Hero() {
             </div>
 
             <div className="relative overflow-hidden [--gap:0.75rem]">
-              <div className="flex w-max gap-[var(--gap)] animate-tech-carousel">
+              <div className="flex w-max gap-(--gap) animate-tech-carousel">
                 {stackItems.map((item, index) => (
                   <div
                     key={`${item.name}-${index}`}
