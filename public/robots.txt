@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tinoctemz.pxxl.click/sitemap.xml
