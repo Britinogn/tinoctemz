@@ -5,8 +5,10 @@ import { GithubIcon, LinkSquare02Icon } from "@hugeicons/core-free-icons";
 import { Link, useParams } from "react-router-dom";
 import { pageLayout } from "@/constants/layout";
 import works from "@/data/data";
+// import { useNavigate } from "react-router-dom";
 
 const ProjectDetails = () => {
+    // const navigate = useNavigate();
     const { id } = useParams();
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -41,11 +43,19 @@ const ProjectDetails = () => {
                 <article className={`${pageLayout.content}`}>
                     <Link
                         to="/projects"
-                        className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.16em] text-(--primary)"
+                        className="inline-flex mt-10 items-center gap-2 text-sm font-semibold uppercase tracking-[0.16em] text-(--primary)"
                     >
                         <ArrowLeft size={18} />
                         Back to projects
                     </Link>
+
+                    {/* <button
+                        onClick={() => navigate(-10)}
+                        className="inline-flex mt-10 cursor-pointer   items-center gap-2 text-sm font-semibold uppercase tracking-[0.16em] text-(--primary)"
+                    >
+                        <ArrowLeft size={18} />
+                        Back to projects
+                    </button> */}
 
                     <div className="mt-10 flex flex-wrap gap-2">
                         <span className="border border-(--border) px-3 py-1 text-xs uppercase tracking-[0.18em] text-(--primary)">
