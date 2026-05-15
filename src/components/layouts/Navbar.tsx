@@ -32,7 +32,7 @@ const Nav = () => {
         {
             name: "Services",
             icon: Briefcase01Icon,
-            href: "#services",
+            href: "/#services",
         },
         {
             name: "GitHub",
