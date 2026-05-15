@@ -1,7 +1,7 @@
 import About from "@/components/sections/About";
 import Contact from "@/components/sections/Contact";
 import Hero from "@/components/sections/Hero";
-import Projects from "@/components/sections/Project";
+// import Projects from "@/components/pages/Project";
 import Services from "@/components/sections/Services";
 
 function Home(){
@@ -9,7 +9,7 @@ function Home(){
         <div>
             <Hero />
             <About />
-            <Projects />
+            {/* <Projects /> */}
             <Services />
             <Contact />
         </div>

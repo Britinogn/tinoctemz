@@ -7,8 +7,8 @@ import {
     Folder01Icon,
     GithubIcon,
     File01Icon,
-    UserIcon,
-    Briefcase01Icon,
+    // UserIcon,
+    // Briefcase01Icon,
 } from "@hugeicons/core-free-icons";
 // import resume from "@/assets/resume.pdf";
 
@@ -19,21 +19,21 @@ const Nav = () => {
             icon: Home09Icon,
             href: "/",
         },
-        {
-            name: "About",
-            icon: UserIcon,
-            href: "#about",
-        },
+        // {
+        //     name: "About",
+        //     icon: UserIcon,
+        //     href: "#about",
+        // },
         {
             name: "Projects",
             icon: Folder01Icon,
-            href: "#projects",
+            href: "/projects",
         },
-        {
-            name: "Services",
-            icon: Briefcase01Icon,
-            href: "/#services",
-        },
+        // {
+        //     name: "Services",
+        //     icon: Briefcase01Icon,
+        //     href: "/#services",
+        // },
         {
             name: "GitHub",
             icon: GithubIcon,
@@ -68,7 +68,8 @@ const Nav = () => {
                         title={item.name}
                         className="flex h-12 min-w-12 items-center justify-center rounded-xl px-4 text-(--text-dark) transition-colors hover:bg-(--primary-dark) hover:text-white"
                     >
-                        <HugeiconsIcon icon={item.icon} size={22} />
+                        <HugeiconsIcon icon={item.icon} size={28} />
+                        {/* <span className="">{item.name}</span> */}
                         <span className="sr-only">{item.name}</span>
                     </motion.a>
                 ))}

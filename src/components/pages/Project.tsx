@@ -6,12 +6,12 @@ const Projects = () => {
     const featuredWorks = works.slice(0, 50);
 
     return (
-        <section id="projects" className="bg-(--surface) px-5 py-24 text-(--text-primary) md:px-8">
+        <section id="projects" className="bg-(--surface) mt-12 px-5 py-24 text-(--text-primary) md:px-8">
             <div className={`${pageLayout.inner} ${pageLayout.columns}`}>
                 <div className={pageLayout.content}>
                     <div className="mb-14 border-b border-(--border) pb-8">
-                        <p className="text-sm uppercase tracking-[0.28em] text-(--primary)">
-                            Selected work
+                        <p className="text-md xl:text-xl uppercase tracking-[0.28em] text-(--primary)">
+                            My Recent Projects
                         </p>
                         <div className="mt-4 grid gap-6 md:grid-cols-[1.1fr_0.9fr] md:items-end">
                             <h2 className="text-4xl font-semibold leading-tight sm:text-5xl">

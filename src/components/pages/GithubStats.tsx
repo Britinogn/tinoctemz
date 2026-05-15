@@ -167,7 +167,7 @@ const GithubStats = () => {
     return (
         <section
             id="github"
-            className={`bg-(--background) py-32 text-(--text-primary) ${pageLayout.section}`}
+            className={`bg-(--background) mt-12 py-32 text-(--text-primary) ${pageLayout.section}`}
         >
             <div className={pageLayout.inner}>
                 <div className={pageLayout.columns}>
@@ -194,7 +194,7 @@ const GithubStats = () => {
                                         color="currentColor"
                                         strokeWidth={1.5}
                                     />
-                                    <span className="font-mono text-xs uppercase tracking-[0.3em]">
+                                    <span className="font-mono text-md uppercase tracking-[0.3em]">
                                         GitHub Activity
                                     </span>
                                 </div>

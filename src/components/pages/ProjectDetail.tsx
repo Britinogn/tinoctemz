@@ -23,7 +23,7 @@ const ProjectDetails = () => {
                         </p>
                         <h1 className="mt-4 text-5xl font-semibold">This project does not exist.</h1>
                         <Link
-                            to="/#projects"
+                            to="/projects"
                             className="mt-8 inline-flex items-center gap-2 bg-(--primary) px-6 py-4 text-sm font-semibold uppercase tracking-[0.16em] text-(--text-dark)"
                         >
                             <ArrowLeft size={18} />
@@ -40,7 +40,7 @@ const ProjectDetails = () => {
             <div className={`${pageLayout.inner} ${pageLayout.columns}`}>
                 <article className={`${pageLayout.content}`}>
                     <Link
-                        to="/#projects"
+                        to="/projects"
                         className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.16em] text-(--primary)"
                     >
                         <ArrowLeft size={18} />
