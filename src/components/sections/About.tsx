@@ -24,7 +24,7 @@ const About = () => {
                                 <div className="absolute bottom-10 left-10 h-[70%] w-[calc(100%-2.5rem)] bg-(--white-secondary)" />
                                 <img
                                     src={heroImage}
-                                    alt="Bright Onwuemeri"
+                                    alt="Tino Ctemz"
                                     className="relative z-10 aspect-[0.76] w-full object-cover object-top shadow-[0_24px_70px_rgba(0,0,0,0.12)]"
                                 />
                             </div>
