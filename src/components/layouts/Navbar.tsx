@@ -37,8 +37,9 @@ const Nav = () => {
         {
             name: "GitHub",
             icon: GithubIcon,
-            href: "https://github.com/britinogn",
-            target: "_blank",
+            // href: "https://github.com/britinogn",
+            href: "/github",
+            // target: "_blank",
         },
         {
             name: "Resume",
