@@ -1,6 +1,6 @@
-// import React from "react";
 import { motion } from "framer-motion";
 import { HugeiconsIcon } from "@hugeicons/react";
+import { Link } from "react-router-dom";
 
 import {
     Home09Icon,
@@ -10,6 +10,7 @@ import {
     // UserIcon,
     // Briefcase01Icon,
 } from "@hugeicons/core-free-icons";
+
 // import resume from "@/assets/resume.pdf";
 
 const Nav = () => {
@@ -27,7 +28,7 @@ const Nav = () => {
         {
             name: "Projects",
             icon: Folder01Icon,
-            href: "projects",
+            href: "/projects",
         },
         // {
         //     name: "Services",
@@ -38,7 +39,7 @@ const Nav = () => {
             name: "GitHub",
             icon: GithubIcon,
             // href: "https://github.com/britinogn",
-            href: "github",
+            href: "/github",
             // target: "_blank",
         },
         {
@@ -56,23 +57,41 @@ const Nav = () => {
             transition={{ duration: 0.4 }}
             className="fixed left-1/2 top-10 z-50 w-[calc(100%-2rem)] max-w-xl -translate-x-1/2"
         >
-            <div className="flex items-center justify-between gap-2 rounded-tl-2xl rounded-br-2xl  border border-(--border) bg-(--white-surface)/60 px-4 py-3 shadow-[0_20px_70px_rgba(0,0,0,0.18)] backdrop-blur-md">
-                {navLinks.map((item, index) => (
-                    <motion.a
-                        key={index}
-                        href={item.href}
-                        target={item.target}
-                        rel="noopener noreferrer"
-                        whileHover={{ scale: 1.12 }}
-                        whileTap={{ scale: 0.95 }}
-                        title={item.name}
-                        className="flex h-12 min-w-12 items-center justify-center rounded-xl px-4 text-(--text-dark) transition-colors hover:bg-(--primary-dark) hover:text-white"
-                    >
-                        <HugeiconsIcon icon={item.icon} size={28} />
-                        {/* <span className="">{item.name}</span> */}
-                        <span className="sr-only">{item.name}</span>
-                    </motion.a>
-                ))}
+            <div className="flex items-center justify-between gap-2 rounded-tl-2xl rounded-br-2xl border border-(--border) bg-(--white-surface)/60 px-4 py-3 shadow-[0_20px_70px_rgba(0,0,0,0.18)] backdrop-blur-md">
+                {navLinks.map((item, index) =>
+                    item.target ? (
+                        <motion.a
+                            key={index}
+                            href={item.href}
+                            target={item.target}
+                            rel="noopener noreferrer"
+                            whileHover={{ scale: 1.12 }}
+                            whileTap={{ scale: 0.95 }}
+                            title={item.name}
+                            className="flex h-12 min-w-12 items-center justify-center rounded-xl px-4 text-(--text-dark) transition-colors hover:bg-(--primary-dark) hover:text-white"
+                        >
+                            <HugeiconsIcon icon={item.icon} size={28} />
+                            {/* <span className="">{item.name}</span> */}
+                            <span className="sr-only">{item.name}</span>
+                        </motion.a>
+                    ) : (
+                        <motion.div
+                            key={index}
+                            whileHover={{ scale: 1.12 }}
+                            whileTap={{ scale: 0.95 }}
+                        >
+                            <Link
+                                to={item.href}
+                                title={item.name}
+                                className="flex h-12 min-w-12 items-center justify-center rounded-xl px-4 text-(--text-dark) transition-colors hover:bg-(--primary-dark) hover:text-white"
+                            >
+                                <HugeiconsIcon icon={item.icon} size={28} />
+                                {/* <span className="">{item.name}</span> */}
+                                <span className="sr-only">{item.name}</span>
+                            </Link>
+                        </motion.div>
+                    )
+                )}
             </div>
         </motion.nav>
     );
