@@ -15,11 +15,11 @@ const Projects = () => {
                         </p>
                         <div className="mt-4 grid gap-6 md:grid-cols-[1.1fr_0.9fr] md:items-end">
                             <h2 className="text-4xl font-semibold leading-tight sm:text-5xl">
-                                Practical builds with polished product presentation.
+                                Building scalable digital experiences with precision and modern design.
                             </h2>
                             <p className="text-base leading-7 text-(--text-secondary)">
-                                A focused set of client-style platforms across real estate,
-                                logistics, booking, business tools, AI, and content.
+                                Selected projects across real estate, logistics, AI, bookings,
+                                business tools, and content driven platforms.
                             </p>
                         </div>
                     </div>

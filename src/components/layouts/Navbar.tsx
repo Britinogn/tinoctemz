@@ -27,7 +27,7 @@ const Nav = () => {
         {
             name: "Projects",
             icon: Folder01Icon,
-            href: "/projects",
+            href: "projects",
         },
         // {
         //     name: "Services",
@@ -38,7 +38,7 @@ const Nav = () => {
             name: "GitHub",
             icon: GithubIcon,
             // href: "https://github.com/britinogn",
-            href: "/github",
+            href: "github",
             // target: "_blank",
         },
         {
