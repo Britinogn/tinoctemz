@@ -8,8 +8,26 @@ import lernstasy from "@/assets/images/lernstasy.png";
 import movizio from "@/assets/images/movizio.png";
 import pixenai from "@/assets/images/pixenai.png";
 import rellaLuxury from "@/assets/images/rella-luxury.png";
+import vidfixa from "@/assets/images/vidfixa.png";
+
 
 const works = [
+    {
+        id: "vidfixa",
+        image: vidfixa,
+        title: "VidFixa",
+        description:
+            "VidFixa is a video downloading SaaS that lets users download supported videos from platforms like Instagram, Facebook, X, and LinkedIn with a simple and fast workflow.",
+        techs: ["Go", "Nuxt", "PostgreSQL", "TypeScript", "Docker", "yt-dlp"],
+        link: "https://vidfixa.onrender.com/",
+        label: "Full Stack",
+        github: "",
+        howIMadeIt:
+            "Built a full stack video downloading platform with a Go backend, Nuxt frontend, PostgreSQL database, background worker processing, yt-dlp integration, authentication, subscription management, webhook based payments, and responsive SaaS interfaces. Deployed the frontend and backend separately with Docker based backend infrastructure.",
+        dateBuilt: "2026",
+    },
+
+
     {
         id: "atw",
         image: atw,
